@@ -4,6 +4,19 @@
   font-family: indiecute;
   src: url("./assets/Indie_Flower/IndieFlower-Regular.ttf");
 }
+@font-face {
+  font-family: reemkuficute;
+  src: url("./assets/Reem_Kufi_Ink/ReemKufiInk-Regular.ttf");
+}
+@font-face {
+  font-family: dang;
+  src: url("./assets/Dangrek/Dangrek-Regular.ttf");
+}
+@font-face {
+  font-family: opensans;
+  src: url("./assets/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf");
+}
+
 
 
 html,
@@ -16,7 +29,8 @@ body {
   margin: 0;
   background: #313233;
   color: #fff;
-  font-family: indiecute;
+  font-family: opensans;
+  font-weight: 900;
 }
 
 body {
