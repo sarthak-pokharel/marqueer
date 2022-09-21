@@ -8,12 +8,12 @@ function marqueeText(t, v) {
 
 function getData() {
   let txt = 'This text is going to be marqueed.';
-  let scroll;
+  let scroll = 20;
   let u = new URL(window.location.href);
 
   if (!(() => u.searchParams.get('crisis'))()) {
     txt = prompt("Enter anything: ") || txt;
-    scroll = prompt("Enter scroll velocity: ", 20);
+    scroll = prompt("Enter scroll velocity: ", 20) || scroll;
     location.href = (() => {
       
       u.searchParams.append("crisis", "no");
