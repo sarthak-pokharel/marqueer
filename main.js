@@ -31,13 +31,19 @@ function getData() {
 $(async function () {
 
 
-
-
+  let dat = getData();
+  try {
+    await screen.orientation.lock('landscape');
+  }catch(err){
+    console.log(err);
+  }
+  // pass
 
 
   $("#app").html(`<div class="marquee" id="marquee"><marquee class="mtxt" scrollamount="20" ></marquee></div>`);
+  screen.orientation.lock('landscape');
 
-  marqueeText(...getData());
+  marqueeText(...dat);
 });
 
 window.ondblclick = () => {
